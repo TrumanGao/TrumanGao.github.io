@@ -1,0 +1,57 @@
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+html{
+    height:100%;
+}
+body{
+    height:100%;
+    background-color:black;
+    color:white;
+    display:flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#wrap{
+    width:10%;
+    min-width: 200px;
+    margin:auto;
+    text-align: center;
+}
+
+
+@keyframes breath{
+    0% {
+        opacity: 0.3;
+    }
+    100%{
+        text-shadow: 0 0 20px white;
+    }
+}
+#welcome{
+    color:white;
+    display: inline-block;
+    font-size: 32px;
+    animation: breath 1500ms infinite alternate;
+    transition:100ms;
+    position: relative;
+}
+#welcome:hover{
+    cursor: pointer;
+    animation: none;
+    transform: scale(1.05);
+    transition:100ms;
+}
+
+.content{
+    margin-top:16px;
+    text-align: left;
+}
+
+p{
+    display: none;
+}
