@@ -18,11 +18,10 @@ body{
 
 #wrap{
     width:10%;
-    min-width: 200px;
+    min-width: 250px;
     margin:auto;
     text-align: center;
 }
-
 
 @keyframes breath{
     0% {
@@ -35,6 +34,8 @@ body{
 #welcome{
     color:white;
     display: inline-block;
+    width:100%;
+    text-align: center;
     font-size: 32px;
     animation: breath 1500ms infinite alternate;
     transition:100ms;
@@ -48,11 +49,13 @@ body{
 }
 
 .content{
-    margin-top:16px;
-    text-align: left;
+    margin-top:30px;
+    min-width: 250px;
 }
 
 p{
+    margin:10px;
     text-shadow: 0.5px 0.5px 1px white;
+    letter-spacing: 5px;
     display: none;
 }
